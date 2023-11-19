@@ -1,4 +1,4 @@
 # Simon Yosief's SQL Porfolio
 
-## Welcome to my SQL portfolio, this code repository contains examples of SQL I've written. Feel free to take a look and reach out if you have any questions.
+## Welcome to my SQL portfolio. THis code repository contains examples of SQL I've written, feel free to take a look and reach out if you have any questions.
 simonsyosief@gmail.com
