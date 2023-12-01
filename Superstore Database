@@ -39,7 +39,7 @@ SELECT MAX(price), category
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
-#Show a statistic about the number of items named "Air Purifier". 
+#Show statistic about the number of items named "Air Purifier". 
 SELECT COUNT(item_name)
 FROM superstore
 WHERE item_name = 'Air Purifier';
