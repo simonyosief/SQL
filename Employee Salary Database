@@ -21,3 +21,16 @@ VALUES
     (12, 'Sales', 80000.00, 7),
     (13, 'Engineering', 85000.00, 8),
     (14, 'Engineering', 92000.00, 10);
+
+# Write a query calculating how much is spent per year on the salaries for departments where total spent on salaries is at least $300,000
+SELECT department, SUM(salary) as total_spent
+FROM employees
+GROUP BY department
+HAVING total_spent >= 300000;
+
+# Select all the departments that pay an average of at least $70,000 per year.
+
+SELECT department, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department
+HAVING avg_salary>=70000;
