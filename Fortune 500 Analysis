@@ -56,7 +56,7 @@ VALUES
     ('Company JJ', 'Manufacturing', 370.0, 3100, 1, 20, 12, 7.6),
     ('Company KK', 'Healthcare', 150.2, 3400, 0, 16, 8, 5.3);
 
-# Group the data in a new way using a CASE statement.
+#Group the data in a new way using a CASE statement.
 
 SELECT company_name, 
 CASE WHEN avg_employee_tenure >= 4 THEN 'Long tenure'
@@ -65,14 +65,14 @@ END AS time_at_company
 FROM fortune_companies
 GROUP BY company_name;
 
-# Use a HAVING clause to determine something interesting about the data per category.
+#Use a HAVING clause to determine something interesting about the data per category.
 
 SELECT industry, company_name, healthcare_benefits
 FROM fortune_companies
 GROUP BY industry
 HAVING healthcare_benefits = 1;
 
-# Use logical operators like AND or OR to filter the data in an interesting way.
+#Use logical operators like AND or OR to filter the data in an interesting way.
 
 SELECT company_name, revenue, healthcare_benefits
 FROM fortune_companies
@@ -80,7 +80,7 @@ WHERE revenue >= 200
 AND healthcare_benefits = 1
 OR paid_time_off_days >= 10;
 
-# Use an aggregate function like AVG, SUM, COUNT, MAX, and/or MIN to return summary statistics about the data.
+#Use an aggregate function like AVG, SUM, COUNT, MAX, and/or MIN to return summary statistics about the data.
 
 SELECT industry, AVG(revenue) AS avg_revenue
 FROM fortune_companies
